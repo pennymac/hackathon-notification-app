@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             "message": message
         ]
 
-        Alamofire.request(.POST, "http://localhost:3000/notifications/", parameters: parameters)
+        Alamofire.request(.POST, "http://localhost:3000/notifications", parameters: parameters)
     }
 }
 
