@@ -15,8 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+
+//        let types: UIUserNotificationType = .Alert
+//        let category: UIUserNotificationCategory = UIUserNotificationCategory.init()
+//
+//        category.identifier = "NotificationSample"
+//
+//        let categories: Set<UIUserNotificationCategory> =
+
+        let settings = UIUserNotificationSettings.init()
+
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+
         return true
+    }
+
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        // Store the deviceToken for later use...
+
+    }
+
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

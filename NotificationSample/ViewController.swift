@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var noticationMessage: UITextView!
+    @IBOutlet weak var sendButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func sendNotification(sender: UIButton) {
+        let text = noticationMessage.text;
+
+        // Post the notification to Apple...
+        registerForRemoteNotifications(text)
+    }
+
 
 
 }
