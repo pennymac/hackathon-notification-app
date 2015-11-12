@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     @IBOutlet weak var noticationMessage: UITextView!
@@ -23,13 +24,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendNotification(sender: UIButton) {
-        let text = noticationMessage.text;
+        let message = noticationMessage.text;
+        let parameters = [
+            "deviceToken": "empty",
+            "message": message
+        ]
 
-        // Post the notification to Apple...
-        registerForRemoteNotifications(text)
+        Alamofire.request(.POST, "http://localhost:3000/notifications/", parameters: parameters)
     }
-
-
-
 }
 
