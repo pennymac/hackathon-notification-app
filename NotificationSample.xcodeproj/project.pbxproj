@@ -16,6 +16,7 @@
 		8347A43F1BF538DD000F26AB /* NotificationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347A43E1BF538DD000F26AB /* NotificationSampleUITests.swift */; };
 		837C4E431BF55632004F0E72 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C4E361BF5554F004F0E72 /* Alamofire.framework */; };
 		837C4E441BF55632004F0E72 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 837C4E361BF5554F004F0E72 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		837C4E4A1BF55827004F0E72 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C4E491BF55827004F0E72 /* TokenStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		8347A43E1BF538DD000F26AB /* NotificationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleUITests.swift; sourceTree = "<group>"; };
 		8347A4401BF538DD000F26AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837C4E2B1BF5554F004F0E72 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		837C4E491BF55827004F0E72 /* TokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				8347A4251BF538DC000F26AB /* Assets.xcassets */,
 				8347A4271BF538DC000F26AB /* LaunchScreen.storyboard */,
 				8347A42A1BF538DC000F26AB /* Info.plist */,
+				837C4E491BF55827004F0E72 /* TokenStore.swift */,
 			);
 			path = NotificationSample;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			files = (
 				8347A4211BF538DC000F26AB /* ViewController.swift in Sources */,
 				8347A41F1BF538DC000F26AB /* AppDelegate.swift in Sources */,
+				837C4E4A1BF55827004F0E72 /* TokenStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
